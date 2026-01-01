@@ -154,7 +154,6 @@
         <h2>Personal Projects</h2>
         <p>Passion projects and self-directed learning adventures in my free time</p>
         <div class="projects-grid">
-            <!-- Example project card - update with your actual projects -->
             <div class="project-card">
                 <div class="project-image coming-soon">
                     <i class="fas fa-rocket"></i>
@@ -216,7 +215,6 @@
                 </div>
             </div>
 
-            <!-- Coming Soon Card for future projects -->
             <div class="project-card">
                 <div class="project-image coming-soon">
                     <i class="fas fa-plus"></i>
@@ -279,13 +277,13 @@
     <footer>
         <p>&copy; 2026 Francesco Foresta. All rights reserved.</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/francescoforesta/" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/francescoforesta/" class="social-link"><i
+                    class="fab fa-linkedin"></i></a>
             <a href="https://github.com/fforesta-dev" class="social-link"><i class="fab fa-github"></i></a>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -295,7 +293,6 @@
             });
         });
 
-        // Header background on scroll
         window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -307,7 +304,6 @@
             }
         });
 
-        // Mobile menu toggle (basic implementation)
         document.querySelector('.mobile-menu').addEventListener('click', function () {
             const navLinks = document.querySelector('.nav-links');
             navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
