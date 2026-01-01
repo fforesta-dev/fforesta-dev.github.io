@@ -170,15 +170,27 @@ nav {
     border-radius: 50%;
 }
 
+.about-text {
+    text-align: left !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+}
+
 .about-text h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #333;
+    text-align: left !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
 }
 
 .about-text p {
-    text-align: left;
+    text-align: left !important;
     margin-bottom: 1.5rem;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
 }
 
 .skills {
@@ -482,4 +494,30 @@ footer {
     nav {
         padding: 0 1rem;
     }
+}
+
+/* Personal Projects Page Specific Styles */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tech-tag {
+    background: #f3f4f6;
+    color: #374151;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.project-image.coming-soon {
+    background: linear-gradient(45deg, #e5e7eb, #d1d5db);
 }
