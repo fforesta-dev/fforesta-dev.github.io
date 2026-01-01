@@ -159,9 +159,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
-    color: #9ca3af;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .about-text h3 {
@@ -219,6 +225,30 @@ nav {
     justify-content: center;
     font-size: 2rem;
     color: #9ca3af;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover img {
+    transform: scale(1.05);
+}
+
+.project-image.coming-soon {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-image.coming-soon span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6b7280;
 }
 
 .project-info {
@@ -253,6 +283,15 @@ nav {
 
 .project-link:hover {
     text-decoration: underline;
+}
+
+.project-link.disabled {
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.project-link.disabled:hover {
+    text-decoration: none;
 }
 
 .education-timeline {
@@ -295,18 +334,13 @@ nav {
     background: #f8fafc;
 }
 
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
-}
-
 .contact-form {
     background: white;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .form-group {
